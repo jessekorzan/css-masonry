@@ -54,7 +54,8 @@ button {
   outline: none;
   cursor: pointer; }
   button.true {
-    background: #91ff26; }
+    background: #91ff26;
+    color: #2c5900; }
 
 .card {
   position: relative;
