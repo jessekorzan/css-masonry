@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,500");
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #f5f3f3;
+  color: #2b2929;
+  font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px; }
+
+main {
+  padding: 44px;
+  text-align: center; }
+  main h1 {
+    margin: 0 0 22px; }
+  main button {
+    margin-bottom: 44px; }
+  @media screen and (max-width: 800px) {
+    main {
+      padding: 22px; } }
+
+section {
+  text-align: left;
+  column-count: 4;
+  column-gap: 8px; }
+  @media screen and (max-width: 1200px) {
+    section {
+      column-count: 2; } }
+  @media screen and (max-width: 800px) {
+    section {
+      column-count: 1; } }
+  section > .card {
+    margin-bottom: 8px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: avoid; }
+
+a {
+  color: #0090ff;
+  text-decoration: none; }
+
+button {
+  text-align: center;
+  border: none;
+  background: #0090ff;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer; }
+  button.true {
+    background: crimson; }
+
+.card {
+  position: relative;
+  background: #ffffff;
+  padding: 22px; }
+  .card * {
+    margin: 0 0 11px; }
+  .card h2 {
+    font-size: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

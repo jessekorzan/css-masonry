@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
+
+$font: "Heebo",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$black : #2b2929;
+$blue : #0090ff;
+$white: #ffffff;
+$grey: #f5f3f3;
+$red: crimson;
+$green: #91ff26;
+$spacer: 44px;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: $grey;
+    color: $black;
+    font-family: $font;
+    font-size: 16px;
+}
+
+main {
+    padding: $spacer;
+    text-align: center;
+    h1 {
+        margin: 0 0 $spacer/2;
+    }
+    button {
+        margin-bottom: $spacer;
+    }
+    @media screen and (max-width: 800px) {
+        padding: $spacer/2;
+    }
+}
+
+section {
+    text-align: left;
+    column-count: 4;
+    column-gap: 8px;
+    @media screen and (max-width: 1200px) {
+        column-count: 2;
+    }
+    @media screen and (max-width: 800px) {
+        column-count: 1;
+    }
+    > .card {
+        margin-bottom: 8px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        page-break-before: avoid;
+    }
+}
+a {
+    color: $blue;
+    text-decoration: none;
+}
+button {
+    text-align: center;
+    border: none;
+    background: $blue;
+    padding: 12px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    &.true {
+        background: $red;
+    }
+}
+
+.card {
+    position: relative;
+    background: $white;
+    padding: $spacer/2;
+    * {
+        margin: 0 0 $spacer/4;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+}
